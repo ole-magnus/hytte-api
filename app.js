@@ -25,6 +25,11 @@ app.post('/upload/north', upload.single('file'), function(req, res) {
     res.status(204).end()
 })
 
+app.get("/status", function(req, res) {
+	res.send("ON")
+	res.status(200).end()
+})
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
