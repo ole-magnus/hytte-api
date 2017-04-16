@@ -1,0 +1,10 @@
+html
+	head
+		title= "Images"
+		body
+		ul
+			each val in recordings
+				img(src=val.image)
+				li= val.position
+				li= val.time
+
